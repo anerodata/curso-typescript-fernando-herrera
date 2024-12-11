@@ -1,2 +1,3 @@
-var msg = 'Hola mundo';
-console.log(msg);
+"use strict";
+let msg = "Hola mundo";
+let num = 3;

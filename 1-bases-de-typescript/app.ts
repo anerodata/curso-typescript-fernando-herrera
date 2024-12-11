@@ -1,2 +1,2 @@
-const msg: string = 'Hola mundo'
-console.log(msg)
+let msg: string = "Hola mundo";
+let num: number = 3;
