@@ -32,3 +32,5 @@ Es mejor no inferir el tipo:
 const a:number = 10
 let b:number
 ```
+
+Es buena práctica poner `"noImplicitAny": true` en la configuración, para que los argumentos en las funciones haya que tiparlos.
