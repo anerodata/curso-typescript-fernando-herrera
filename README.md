@@ -22,9 +22,9 @@ Los Symbol se usan cuando quieres tener dentro de un objeto una propiedad garant
 
 Typescript va a tratar de inferir los datos de manera automática
 
-`const a = 10`, Typescript infiere el tipo 10. No se puede reasignar
-`let b = 10`, Typescript infiere el tipo number, porque se puede reasignar a 3, por ejemplo. No se puede reasignar.
-`let b;`: Esto último sería de tipo `any`, podría ser cualquier cosa
+- `const a = 10`, Typescript infiere el tipo 10. No se puede reasignar
+- `let b = 10`, Typescript infiere el tipo number, porque se puede reasignar a 3, por ejemplo. Se puede reasignar.
+- `let b;`: Esto último sería de tipo `any`, podría ser cualquier cosa
 
 Es mejor no inferir el tipo:
 
