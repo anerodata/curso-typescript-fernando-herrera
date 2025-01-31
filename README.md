@@ -34,3 +34,6 @@ let b:number
 ```
 
 Es buena práctica poner `"noImplicitAny": true` en la configuración, para que los argumentos en las funciones haya que tiparlos.
+
+## Depuración
+- En el fichero `tsconfig.json`. La propiedad `sourceMap` si la seteamos a true nos ayuda a depurar, porque se ven los `console.log` con la línea del fichero Typescript

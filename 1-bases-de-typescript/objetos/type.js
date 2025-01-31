@@ -12,3 +12,4 @@
         powers: ['Charisma', 'Storytelling']
     };
 })();
+//# sourceMappingURL=type.js.map

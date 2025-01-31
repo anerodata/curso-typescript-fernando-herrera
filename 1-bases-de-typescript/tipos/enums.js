@@ -21,3 +21,4 @@
     // En este enum d sería igual a 10
     // Como "c" se iguala a 9, el siguiente valor es 10, no importa que se repita el valor de la enumeración.
 })();
+//# sourceMappingURL=enums.js.map

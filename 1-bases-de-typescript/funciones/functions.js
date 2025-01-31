@@ -10,3 +10,4 @@
     };
     const heroName = returnName();
 })();
+//# sourceMappingURL=functions.js.map

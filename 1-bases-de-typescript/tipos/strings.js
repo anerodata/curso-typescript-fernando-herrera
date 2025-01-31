@@ -12,3 +12,4 @@
     // Esto no, solo aplicaría toUpperCase si existe el char 40
     console.log((_a = name[40]) === null || _a === void 0 ? void 0 : _a.toUpperCase());
 })();
+//# sourceMappingURL=strings.js.map

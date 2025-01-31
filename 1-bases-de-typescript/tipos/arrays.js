@@ -10,3 +10,4 @@
     // El sugeridor te permite invocar metodos de script como toUpperCase porque TS sabe que son strings
     fruits.forEach(fruit => fruit.toUpperCase());
 })();
+//# sourceMappingURL=arrays.js.map

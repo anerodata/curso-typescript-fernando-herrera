@@ -9,3 +9,4 @@
     console.log(a);
     // void, no hay valor de retorno
 })();
+//# sourceMappingURL=void.js.map

@@ -6,3 +6,4 @@
     };
     const worker = fullName('Braulio', 'Del Monte', 'Ataúlfo');
 })();
+//# sourceMappingURL=args-rest.js.map

@@ -6,3 +6,4 @@
     // sin la restricción stricNullChecks no daría error asignar undefined o null a un boleano
     let isActive = null;
 })();
+//# sourceMappingURL=null-undefined.js.map

@@ -45,3 +45,4 @@ const apocalipsis = {
 let mystique;
 mystique = charles;
 mystique = apocalipsis;
+//# sourceMappingURL=ejercicio-modulo.js.map
