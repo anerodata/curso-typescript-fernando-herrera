@@ -43,6 +43,12 @@ Algunas propiedades interesantes en `compilerOptions` son:
 - `removeComments`: Elimina los comentarios del JS
 - `outFile`: Establece el fichero donde se exporta el transpilado a JS. Desde el punto de vista del rendimiento del servidor, es mejor cargar un solo fichero JS
 
+Si definimos un `outFile` y no tenemos `amd` predefinido como tipo de módulo por defecto. Typescript nos dará el siguiente error:
+
+```
+tsconfig.json:28:5 - error TS6082: Only 'amd' and 'system' modules are supported alongside --outFile.
+```
+
 Fuera de `compilerOptions` tenemos:
 
 ```
@@ -60,4 +66,3 @@ include: [
 ```
 
 Compilaría todo lo que hay dentro de `node_modules`. SOLAMENTE. Que no se compila por defecto porque no está recomendado.
-
