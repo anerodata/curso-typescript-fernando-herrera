@@ -9,5 +9,5 @@
 
   let noname: any
   // Se le podria pasar un noname, por eso no esta demas poner sentencias de control de undefined en lo alto de la funcion
-  const name = fullName(noname, 'Stark')
+  const name2 = fullName(noname, 'Stark')
 })()

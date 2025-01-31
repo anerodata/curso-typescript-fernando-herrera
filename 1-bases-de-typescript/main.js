@@ -35,7 +35,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     };
     const name = fullName('Tony', 'Stark');
     let noname;
-    const name = fullName(noname, 'Stark');
+    const name2 = fullName(noname, 'Stark');
 })();
 ;
 (() => {
