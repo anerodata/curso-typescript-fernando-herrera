@@ -35,5 +35,29 @@ let b:number
 
 Es buena práctica poner `"noImplicitAny": true` en la configuración, para que los argumentos en las funciones haya que tiparlos.
 
-## Depuración
+## `tsconfig`
+
+Algunas propiedades interesantes en `compilerOptions` son:
+
 - En el fichero `tsconfig.json`. La propiedad `sourceMap` si la seteamos a true nos ayuda a depurar, porque se ven los `console.log` con la línea del fichero Typescript
+- `removeComments`: Elimina los comentarios del JS
+- `outFile`: Establece el fichero donde se exporta el transpilado a JS. Desde el punto de vista del rendimiento del servidor, es mejor cargar un solo fichero JS
+
+Fuera de `compilerOptions` tenemos:
+
+```
+exclude: [
+    "objetos"
+]
+```
+
+Sirve para no compilar todos los ficheros contenidos en la carpeta "objetos".
+
+```
+include: [
+    "node_modules"
+]
+```
+
+Compilaría todo lo que hay dentro de `node_modules`. SOLAMENTE. Que no se compila por defecto porque no está recomendado.
+
