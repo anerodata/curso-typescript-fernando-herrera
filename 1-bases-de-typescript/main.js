@@ -18,6 +18,36 @@
 ;
 (() => {
     class Rapper {
+        constructor(name, realName) {
+            this.name = name;
+            this.realName = realName;
+            this.name = name;
+            this.realName = realName;
+        }
+        getFullName() {
+            return `${this.name}, ${this.realName}`;
+        }
+    }
+    class EastRapper extends Rapper {
+    }
+    class WestRapper extends Rapper {
+        constructor(name, realName) {
+            super(name, realName);
+            this.name = name;
+            this.realName = realName;
+        }
+        getFullNameWest() {
+            return `${super.getFullName()}, west`;
+        }
+    }
+    const raekwon = new EastRapper('Raekwon', 'Corey Woods');
+    const tupac = new WestRapper('2pac', 'Tupac Shakur');
+    console.log(raekwon);
+    console.log(tupac.getFullNameWest());
+})();
+;
+(() => {
+    class Rapper {
         static getName() {
             return this.name;
         }
