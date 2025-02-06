@@ -102,4 +102,27 @@
     Rapper.avgAge = 34;
     const raekwon = new Rapper('Raekwon', 'Wu Tang Clan');
 })();
+;
+(() => {
+    class ShoppingCart {
+        constructor(items) {
+            this.items = items;
+            this.items = items;
+        }
+        static createShopingCart() {
+            if (!ShoppingCart.instance) {
+                ShoppingCart.instance = new ShoppingCart([]);
+            }
+            return ShoppingCart.instance;
+        }
+        addItem(item) {
+            this.items.push(item);
+        }
+    }
+    const shoppingCart1 = ShoppingCart.createShopingCart();
+    shoppingCart1.addItem('tomate');
+    const shoppingCart2 = ShoppingCart.createShopingCart();
+    const shoppingCart3 = ShoppingCart.createShopingCart();
+    console.log(shoppingCart1, shoppingCart2, shoppingCart3);
+})();
 //# sourceMappingURL=main.js.map
