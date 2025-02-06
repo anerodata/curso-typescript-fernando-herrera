@@ -1,6 +1,34 @@
 "use strict";
 ;
 (() => {
+    class Animal {
+        constructor(name, age) {
+            this.name = name;
+            this.age = age;
+            this.name = name;
+            this.age = age;
+        }
+    }
+    class Dog extends Animal {
+        ladrar() {
+            console.log('Guau');
+        }
+    }
+    class Cat extends Animal {
+        maullar() {
+            console.log('Miau');
+        }
+    }
+    const dog = new Dog('Toby', 3);
+    const cat = new Cat('Felix', 4);
+    const printName = (animal) => {
+        console.log('Nombre:', animal.name);
+    };
+    printName(dog);
+    printName(cat);
+})();
+;
+(() => {
     class Rapper {
         constructor(name, group, age) {
             this.name = 'Pep';
@@ -12,8 +40,6 @@
     }
     Rapper.bestSong = 'Sneakers';
     const raekwon = new Rapper('Raekwon', 'Wu Tang Clan');
-    console.log(raekwon);
-    console.log(Rapper.bestSong);
 })();
 ;
 (() => {
@@ -39,11 +65,18 @@
         getFullNameWest() {
             return `${super.getFullName()}, west`;
         }
+        get fullName() {
+            return `${this.name}, ${this.realName}`;
+        }
+        set fullName(value) {
+            if (value.length < 3)
+                throw 'Nombre muy corto';
+            this.name = value;
+        }
     }
     const raekwon = new EastRapper('Raekwon', 'Corey Woods');
     const tupac = new WestRapper('2pac', 'Tupac Shakur');
-    console.log(raekwon);
-    console.log(tupac.getFullNameWest());
+    tupac.fullName = 'Paco';
 })();
 ;
 (() => {
@@ -68,7 +101,5 @@
     }
     Rapper.avgAge = 34;
     const raekwon = new Rapper('Raekwon', 'Wu Tang Clan');
-    console.log(raekwon.bio());
-    console.log(Rapper.getRealName());
 })();
 //# sourceMappingURL=main.js.map

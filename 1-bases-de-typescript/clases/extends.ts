@@ -24,11 +24,22 @@
     public getFullNameWest() {
       return `${super.getFullName()}, west`
     }
+    get fullName() {
+      return `${this.name}, ${this.realName}`
+    }
+
+    set fullName(value: string) {
+      if (value.length < 3) throw 'Nombre muy corto'
+      this.name = value
+    }
   }
 
   const raekwon = new EastRapper('Raekwon', 'Corey Woods')
   const tupac = new WestRapper('2pac', 'Tupac Shakur')
 
-  console.log(raekwon)
-  console.log(tupac.getFullNameWest())
+  // console.log(raekwon)
+  // console.log(tupac.getFullNameWest())
+  // console.log(tupac.fullName)
+  tupac.fullName = 'Paco'
+  // console.log(tupac.fullName)
 })()

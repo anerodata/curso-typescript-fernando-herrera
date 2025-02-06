@@ -14,6 +14,6 @@
   }
 
   const raekwon: Rapper = new Rapper('Raekwon', 'Wu Tang Clan')
-  console.log(raekwon)
-  console.log(Rapper.bestSong)
+  //console.log(raekwon)
+  //console.log(Rapper.bestSong)
 })()

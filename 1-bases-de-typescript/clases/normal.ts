@@ -24,8 +24,8 @@
   }
 
   const raekwon: Rapper = new Rapper('Raekwon', 'Wu Tang Clan')
-  console.log(raekwon.bio())
+  //console.log(raekwon.bio())
 
   // No existe este acceso en JS. Un metodo statico solo puede ser accedido desde el nombre de la clase
-  console.log(Rapper.getRealName())
+  //console.log(Rapper.getRealName())
 })()
