@@ -66,3 +66,7 @@ include: [
 ```
 
 Compilaría todo lo que hay dentro de `node_modules`. SOLAMENTE. Que no se compila por defecto porque no está recomendado.
+
+## Decorador
+
+Una funcion que se ejecuta al transpilar el codigo de TS a JS
