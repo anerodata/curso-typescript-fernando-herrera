@@ -69,4 +69,4 @@ Compilaría todo lo que hay dentro de `node_modules`. SOLAMENTE. Que no se compi
 
 ## Decorador
 
-Una funcion que se ejecuta al transpilar el codigo de TS a JS
+Una funcion que se ejecuta al transpilar el codigo de TS a JS. Expande la funcionalidad de una clase, método, propiedad... con el objetivo de que el código sea más fácil de leer No se suelen necesitar para implementar algo. Originalmente, creados para hacer el código más fácil de leer. Angular fue el primer framework que lo popularizó. En frameworks como el citado Angular o Next se suelen consumir. No se suelen crear.
