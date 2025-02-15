@@ -13,4 +13,6 @@ import { getPokemon } from './generics/get-pokemon'
 const charmander = new Pokemon('Charmander')
 
 // Da un error en consola porque hemos bloqueado el prorotipo con un decorador
-;(Pokemon.prototype as any).customName = 'Pik'
+// ;(Pokemon.prototype as any).customName = 'Pik'
+
+charmander.savePokemonToDB(539)
