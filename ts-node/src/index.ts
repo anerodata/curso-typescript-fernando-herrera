@@ -16,3 +16,7 @@ const charmander = new Pokemon('Charmander')
 // ;(Pokemon.prototype as any).customName = 'Pik'
 
 charmander.savePokemonToDB(539)
+console.log(charmander)
+
+// Esto da un error en consola
+charmander.publicApi = 'pepito'
