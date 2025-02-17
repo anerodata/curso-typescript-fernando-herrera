@@ -36,6 +36,7 @@ function readonly(isWritable: boolean = false): Function {
     const descriptor: PropertyDescriptor = {
       // Se dispara al intentar acceder a la propiedad publicApi (Mirar en consola)
       get() {
+        // Revisar esto
         return 'Fernando'
       },
       set(this, val) {
