@@ -10,3 +10,6 @@ export const printObj = (argument: any) => {
 export const genericFn = <T>(argument: T) => {
   return argument
 }
+
+genericFn<number>(7).toString()
+genericFn<string>('pepito').trim()

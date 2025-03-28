@@ -6,7 +6,7 @@
   const arr: (string | number)[] = [1, '2', 3]
 
   // Lo coherente es declararlos solo de un tipo
-  const fruits: string[] = ['Apple', 'Orange', 'Grapes']
+  const fruits: string[] = []
 
   // El sugeridor te permite invocar metodos de script como toUpperCase porque TS sabe que son strings
   fruits.forEach(fruit => fruit.toUpperCase())
